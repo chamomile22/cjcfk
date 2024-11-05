@@ -1,0 +1,154 @@
+@keyframes imageAppearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btnJump {
+  0% {
+    margin-bottom: 0;
+  }
+
+  10% {
+    margin-bottom: 15px;
+  }
+
+  20% {
+    margin-bottom: 0;
+  }
+
+  25% {
+    margin-bottom: 10px;
+  }
+
+  30% {
+    margin-bottom: 0;
+  }
+
+  35% {
+    margin-bottom: 5px;
+  }
+
+  40% {
+    margin-bottom: 0;
+  }
+
+  40% {
+    margin-bottom: 3px;
+  }
+
+  50% {
+    margin-bottom: 0;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-container {
+  min-width: 102px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+.text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-yes {
+  font-size: 16px;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1000ms;
+}
+
+.btn-yes:hover {
+  animation-play-state: paused;
+}
+
+.answer {
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: imageAppearance;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-in;
+}
+
+.btn-no {
+  font-size: 16px;
+  display: none;
+}
+
+.btn-no--first {
+  font-size: 16px;
+}
+
+.btn-no-2 {
+  position: fixed;
+  top: 220px;
+  left: 200px;
+}
+
+.btn-no-3 {
+  position: fixed;
+  top: 210px;
+  left: 700px;
+}
+
+.btn-no-4 {
+  position: fixed;
+  top: 550px;
+  left: 550px;
+}
+
+.btn-no-5 {
+  position: fixed;
+  top: 90px;
+  left: 420px;
+}
+
+.btn-no-6 {
+  position: fixed;
+  top: 320px;
+  left: 200px;
+}
+
+.btn-no-7 {
+  position: fixed;
+  top: 600px;
+  left: 900px;
+}
+
+.btn-no-8 {
+  position: fixed;
+  top: 480px;
+  left: 340px;
+}
